@@ -28,6 +28,21 @@ main > section {
     background-color: #141922;
 }
 
+/* FOOTER CONTAINER */
+
+.footer-left{
+    width: 200px;
+}
+
+.footer-middle
+{
+    width: calc(100% - 200px - 200px);
+}
+
+.footer-right{
+    width: 200px;
+}
+
 /* ELEMENTI */
 
 .logo-image{
@@ -50,10 +65,12 @@ main > section {
 .btn{
     background-color: #080b12;
     color: white;
-    border: 3px solid white;
-    border-radius: 16px;
+    border: 2px solid white;
+    border-radius: 20px;
     padding: 12px 32px;
     margin-right: 16px;
+    width: 16rem;
+    height: 2.5rem;
 }
 
 .main-section{
@@ -124,11 +141,11 @@ img{
 }
 
 .bottom-section{
-    height: 6rem;
+    height: 8rem;
 }
 
 .top-section{
-    height: calc(100% - 6rem);
+    height: calc(100% - 8rem);
     overflow: hidden;
 }
 
@@ -156,19 +173,6 @@ img{
     border-radius: 50%;
 }
 
-.footer-left{
-    width: 200px;
-}
-
-.footer-middle
-{
-    width: calc(100% - 200px - 200px);
-}
-
-.footer-right{
-    width: 200px;
-}
-
 .linea-grande{
     background-color: #5a5a5a;
     width: 50%;
@@ -182,3 +186,55 @@ img{
     height: 6px;
     border-radius: 25px;
 }
+
+/* HOVER */
+
+a:hover,
+.fa-square-plus:hover,
+.fa-heart:hover,
+.fa-folder:hover {
+    color: white;
+}
+
+.btn:hover {
+    width: 17%;
+    height: 3rem;
+}
+
+.fa-circle-play:hover {
+    font-size: 33px;
+}
+
+.linea-piccola:hover{
+    background-color: greenyellow;
+}
+
+h6:hover{
+    text-decoration: underline;
+}
+
+.image-container:hover{
+    background-color: black;
+}
+
+/* RESPONSIVE SOLUTIONS */
+
+/* DESKTOP */
+
+@media screen and (max-width: 992px) {
+    .card-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .main-container{
+        width: 100%;
+    }
+
+    .card-container{
+        flex-wrap: wrap;
+    }
+}
+
+
