@@ -7,12 +7,11 @@ body{
 main{
     height: calc(100% - 80px);
     display: flex;
-    overflow-y: scroll;
 }
 
 footer{
     height: 80px;
-    background-color: crimson;
+    background-color: #282828;
 }
 
 /* MAIN CONTAINER */
@@ -26,7 +25,7 @@ main > nav {
 main > section {
     height: 100%;
     width: calc(100% - 200px);
-    background-color: rgb(0, 51, 77);
+    background-color: #141922;
 }
 
 /* ELEMENTI */
@@ -35,32 +34,151 @@ main > section {
     width: 80%;
 }
 
+.down-image{
+    width: 12%;
+    color: grey;
+}
+
 .row-over{
     height: 85px;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #080b12;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 .btn{
-    background-color: black;
+    background-color: #080b12;
     color: white;
     border: 3px solid white;
     border-radius: 16px;
-    padding: 12px 32px; 
+    padding: 12px 32px;
+    margin-right: 16px;
+}
+
+.main-section{
+    height: calc(100% - 85px);
+    overflow-y: auto;
 }
 
 .menu{
     display: flex;
 }
 
-a{
+.menu li,
+.pl li{
+    margin: 16px;
+}
+
+.pl{
+    display: flex;
+    color: grey;
+}
+
+.pl ul{
+    list-style: none;
+}
+
+a{  
     text-decoration: none;
-    color: white;
+    color: grey;
 }
 
 img{
     width: 20%;
+}
+
+.white-cont{
+    color: white;
+    margin: 16px 16px 0 16px;
+}
+
+.list{
+    padding: 5px 0;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.alt{
+    height: 18rem;
+    overflow: auto;
+}
+
+.down-content{
+    color: grey;
+}
+
+.user-image{
+    background-color: grey;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+#short{
+    width: 82%;
+    margin: auto;
+}
+
+.bottom-section{
+    height: 6rem;
+}
+
+.top-section{
+    height: calc(100% - 6rem);
+    overflow: hidden;
+}
+
+.menu-container > li{
+    list-style-type: none;
+    padding: 18px;
+    font-size: 12px;
+}
+
+.main-container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.card-container{
+    width: calc(100% / 6);
+}
+
+.card{
+    width: 20%;
+    text-align: center;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.footer-left{
+    width: 200px;
+}
+
+.footer-middle
+{
+    width: calc(100% - 200px - 200px);
+}
+
+.footer-right{
+    width: 200px;
+}
+
+.linea-grande{
+    background-color: #5a5a5a;
+    width: 50%;
+    height: 6px;
+    border-radius: 25px;
+}
+
+.linea-piccola{
+    background-color: #c1c1c1;
+    width: 40%;
+    height: 6px;
+    border-radius: 25px;
 }

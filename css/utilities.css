@@ -7,6 +7,7 @@
 .d-flex {	display: flex;	}
 .flex-row {	flex-direction: row; }
 .flex-column { flex-direction: column; }
+.flex-end { justify-content: flex-end; }
 .flex-justify-between { justify-content: space-between; }
 .flex-justify-around { justify-content: space-around; }
 .flex-justify-center { justify-content: center; }
@@ -14,6 +15,7 @@
 .flex-wrap { flex-wrap: wrap; }
 .flex-nowrap { flex-wrap: nowrap; }
 /*** LARGHEZZE ***/
+.w-10 { width: 10%; }
 .w-20 { width: 20%; } /* 1/5 */
 .w-25 { width: 25%; } /* 1/4 */
 .w-30 { width: 30%; } /* 1/3 */
@@ -97,3 +99,8 @@
 .bg-aquamarine { background-color: aquamarine; }
 .bg-darkslategray { background-color: darkslategray; }
 .bg-lightgray { background-color: lightgray; }
+.grey { color: grey;}
+.white { color: white;}
+
+
+.fz-12 { font-size: 12px; }
