@@ -30,7 +30,7 @@
                 </ul>
             </div>
             
-            <h4 class="white-cont">PLAYLIST</h4>
+            <h4 class="playlist white mt-16 mr-16 ml-16">PLAYLIST</h4>
             <div class="pl">
                 <ul class="alt">
                     <li class="list">
@@ -81,12 +81,12 @@
             <div class="bottom-section">
                 <div class="down-content d-flex flex-align-center p-16">
                     <img src="img/download.svg" class="down-image mr-8">
-                    <a href="#">Installa app</a>
+                    <a href="#" class="playlist">Installa app</a>
                 </div>
                 <hr id="short">
                 <div class="d-flex flex-align-center p-16">
                     <img src="img/profile.svg" class="user-image">
-                    <h4 class="white-cont">John Doe</h4>
+                    <h4 class="playlist white mt-16 mr-16 ml-16">John Doe</h4>
                 </div>
             </div> 
         </nav>
@@ -95,7 +95,8 @@
                 <button class="btn">EFFETTUA L'UPGRADE</button>
             </div>
             <div class="main-section">
-                <div class="menu-container grey d-flex flex-justify-center">
+                <div class="menu-container">
+                    <ul class="d-flex">
                     <li>
                         <h4>
                             <a href="#">IN EVIDENZA</a>
@@ -126,37 +127,68 @@
                             <a href="#">SCOPRI</a>
                         </h4>
                     </li>
+                    </ul>
                 </div>
-                <div class="main-container">
+                <div class="main-container"> 
                     <h2 class="white m-16">Recently played</h2>
                     <div class="card-container d-flex w-100">
-                        <div class="card d-flex flex-column flex-align-center">
-                            <img src="img/metal_lifting.jpg" class="w-80 my-32 d-flex" alt="">         
+                        <div class="card d-flex flex-column flex-align-center flex-wrap m-16">
+                            <div class="relative">
+                                <img src="img/metal_lifting.jpg" class="w-100 d-block" alt="">
+                                <div class="mask">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
                             <h3 class="white">Heavy Metal</h3>
                             <h5 class="grey fz-12 my-8">Subtitle</h5>
                         </div>
-                        <div class="card d-flex flex-column flex-align-center">
-                            <img src="img/stranger.jpeg" class="w-80 my-32 d-flex" alt="">         
+                        <div class="card d-flex flex-column flex-align-center flex-wrap m-16">
+                            <div class="relative">
+                                <img src="img/stranger.jpeg" class="w-100 d-block" alt="">  
+                                <div class="mask">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>       
                             <h3 class="white">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                             <h5 class="grey fz-12 my-8">Kyle Dixon & Michael Stein</h5>
                         </div>
-                        <div class="card d-flex flex-column flex-align-center">
-                            <img src="img/aquietplace.jpeg" class="w-80 my-32 d-flex" alt="">         
+                        <div class="card d-flex flex-column flex-align-center flex-wrap m-16">
+                            <div class="relative">
+                                <img src="img/aquietplace.jpeg" class="w-100 d-block" alt=""> 
+                                <div class="mask">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>        
                             <h3 class="white">A quiet place</h3>
                             <h5 class="grey fz-12 my-8">Subtitle</h5>
                         </div>
-                        <div class="card d-flex flex-column flex-align-center">
-                            <img src="img/split.jpeg" class="w-80 my-32 d-flex" alt="">         
+                        <div class="card d-flex flex-column flex-align-center flex-wrap m-16">
+                            <div class="relative">
+                                <img src="img/split.jpeg" class="w-100 d-block" alt="">   
+                                <div class="mask">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>      
                             <h3 class="white">Split</h3>
                             <h5 class="grey fz-12 my-8">Subtitle</h5>
                         </div>
-                        <div class="card d-flex flex-column flex-align-center">
-                            <img src="img/cure.jpeg" class="w-80 my-32 d-flex" alt="">         
+                        <div class="card d-flex flex-column flex-align-center flex-wrap m-16">
+                            <div class="relative">
+                                <img src="img/cure.jpeg" class="w-100 d-block" alt="">
+                                <div class="mask">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>         
                             <h3 class="white">A cure for wellness</h3>
                             <h5 class="grey fz-12 my-8">Subtitle</h5>
                         </div>
-                        <div class="card d-flex flex-column flex-align-center">
-                            <img src="img/sinister.jpeg" class="w-80 my-32 d-flex" alt="">         
+                        <div class="card d-flex flex-column flex-align-center flex-wrap m-16">
+                            <div class="relative">
+                                <img src="img/sinister.jpeg" class="w-100 d-block" alt="">
+                                <div class="mask">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>         
                             <h3 class="white">Sinister</h3>
                             <h5 class="grey fz-12 my-8">Subtitle</h5>
                         </div>
@@ -164,25 +196,35 @@
                     <h2 class="white mx-16 mt-32">Creato per John</h2>
                     <h5 class="grey mt-8 mb-16 ml-16">Più ascolti, più accurati saranno i suggerimenti.</h5>
                     <div class="d-flex w-80">
-                        <div class="card w-20 d-flex flex-column flex-align-center">
-                            <img src="img/radar.jpeg" class="w-80 my-32 d-flex" alt="">         
+                        <div class="card w-20 d-flex flex-column flex-align-center m-16">
+                            <div class="relative">
+                                <img src="img/radar.jpeg" class="w-100 d-block" alt="">
+                                <div class="mask">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>         
                             <h3 class="white">Release Radar</h3>
                         </div>
-                        <div class="card w-20 d-flex flex-column flex-align-center">
-                            <img src="img/mixdaily.jpeg" class="w-80 my-32 d-flex" alt="">         
+                        <div class="card w-20 d-flex flex-column flex-align-center m-16">
+                            <div class="relative">
+                                <img src="img/mixdaily.jpeg" class="w-100 d-block" alt="">
+                                <div class="mask">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div> 
+                            </div>        
                             <h3 class="white">Daily Mix 1</h3>
                         </div>
                     </div>
                     <h2 class="white mx-16 mt-32">Artisti più popolari</h2>
                     <h5 class="grey mt-8 mb-16 ml-16">Più ascolti, più accurati saranno i suggerimenti.</h5>
                     <div class="d-flex w-80">
-                        <div class="card w-20 d-flex flex-column flex-align-center">
-                            <img src="img/youg.jpeg" class=" circle w-80 my-32 d-flex" alt="">         
+                        <div class="card w-20 d-flex flex-column flex-align-center m-16">
+                            <img src="img/youg.jpeg" class=" circle w-100 d-block mb-16" alt="">       
                             <h3 class="white mb-16">Lana Del Rey</h3>
                         </div>
-                        <div class="card w-20 d-flex flex-column flex-align-center">
-                            <img src="img/einaudi.jpeg" class="circle w-80 my-32 d-flex" alt="">         
-                            <h3 class="white mb-16">Einaudi</h3>
+                        <div class="card w-20 d-flex flex-column flex-align-center m-16">
+                            <img src="img/einaudi.jpeg" class="circle w-100 d-block mb-16" alt="">         
+                            <h3 class="white mb-16">Ludovico Einaudi</h3>
                         </div>
                     </div>
                 </div>
@@ -204,7 +246,7 @@
         </div>
         <div class="footer-middle d-flex flex-justify-center flex-align-center">
             <div class="d-flex flex-column w-100 flex-align-center">
-                <div class="mb-8">
+                <div class="play-bar mb-8">
                     <i class="fa-solid fa-shuffle white fz-18 p-16"></i>
                     <i class="fa-solid fa-backward-step white fz-18 p-16"></i>
                     <i class="fa-regular fa-circle-play white fz-30 p-16"></i>

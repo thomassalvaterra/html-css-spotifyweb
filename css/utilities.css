@@ -5,6 +5,7 @@
 }
 /*** FLEX ***/
 .d-flex {	display: flex;	}
+.d-block { display: block; }
 .flex-row {	flex-direction: row; }
 .flex-column { flex-direction: column; }
 .flex-end { justify-content: flex-end; }
