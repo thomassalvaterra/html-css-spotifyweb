@@ -209,7 +209,7 @@ img{
     width: 100%;
     color: white;
     background-color: rgba(0,0,0, 0.503);
-    /* display: none; */
+    display: none;
 }
 
 .mask i{
@@ -218,6 +218,16 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.circle-cont{
+    display: none;
+}
+
+.fa-circle{
+    top: -4px;
+    left: 99%;
+    font-size: 14px;
 }
 
 /* HOVER */
@@ -250,8 +260,12 @@ h6:hover{
     background-color: black;
 }
 
-.mask:hover{
-    
+.relative:hover .mask{
+    display: block;
+}
+
+.linea-piccola:hover .circle-cont{
+    display: block;
 }
 
 /* RESPONSIVE SOLUTIONS */
@@ -261,18 +275,18 @@ h6:hover{
 @media screen and (max-width: 992px) {
     .card-container{
         flex-wrap: wrap;
+        width: calc(100% / 4);
     }
 }
 
 /* TABLET */
 
 @media  screen and (max-width: 768px) {
-    .main-container{
-        width: 100%;
-    }
 
     .card-container{
+        flex-direction: row;
         flex-wrap: wrap;
+        width: calc(100% / 2);
     }
 }
 
